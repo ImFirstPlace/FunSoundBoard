@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway+Dots&display=swap');
+
+
+::before,
+::after {
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: url("Images/corwin-prescott_olympic_jpeg.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    overscroll-behavior: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: -8px;
+    padding: 0px;
+    background: rgba(100, 100, 100, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    overflow: hidden;
+    position: fixed;
+    top: 8px;
+    width: 100%;
+    z-index: 1;
+}
+
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+    color:white;
+}
+
+.title {
+    font-size: 50px;
+    font-family: 'Raleway Dots', cursive;
+    color: white;
+}
+
+.subHeads {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    margin-top: 20px;
+    color: rgb(230, 230, 230);
+}
+
+.soundButton {
+    background: rgba(200, 200, 200, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: none;
+    transition: background 400ms;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 15px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+.soundButtonArchive {
+    background: rgba(200, 200, 200, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 15px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255,255,255,0.7);
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
