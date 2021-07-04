@@ -16,7 +16,7 @@ function PlaySound(Category, NameSound) {
         if (NameSound == "OTH") {
             GetSound("./Sounds/Normal/OTH.mp3")
         } else if(NameSound == "NokiaRT") {
-            GetSound("./Sounds/VeryLoud/NokiaRT.mp3")
+            GetSound("./Sounds/Normal/NokiaRT.mp3")
         }
     }
 }
