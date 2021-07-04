@@ -6,14 +6,18 @@ var source;
 
 function PlaySound(Category, NameSound) {
     if (Category === "VeryLoud") {
-        if (NameSound == "OTH") {
-            GetSound("./Sounds/VeryLoud/OTH.mp3")
+        if (NameSound == "OTH_L") {
+            GetSound("./Sounds/VeryLoud/OTH_L.mp3")
+        } else if(NameSound == "NokiaRT_L") {
+            GetSound("./Sounds/VeryLoud/NokiaRT_L.mp3")
         }
     }
     else if (Category == "Normal") {
         if (NameSound == "OTH") {
             GetSound("./Sounds/Normal/OTH.mp3")
-        } 
+        } else if(NameSound == "NokiaRT") {
+            GetSound("./Sounds/VeryLoud/NokiaRT.mp3")
+        }
     }
 }
 
