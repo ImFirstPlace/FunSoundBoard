@@ -66,11 +66,6 @@ function createRipple(event) {
 }
 
 const buttons = document.getElementsByTagName("button");
-console.log(buttons)
 for (const button of buttons) {
-    console.log("Setup")
     button.addEventListener("click", createRipple);
-    console.log("Setup")
 }
-
-console.log("Start")
